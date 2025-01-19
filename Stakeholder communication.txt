@@ -1,0 +1,31 @@
+Subject: Clarifications and Updates on Rewards Data
+
+Hi all,
+
+This is Srihari Katti. I've been working on cleaning and organizing the rewards data that I received recently, and I wanted to provide an update on my progress while seeking some clarifications regarding certain aspects of the data.
+
+Here are a few points where I’d appreciate your input to ensure that the final deliverable aligns with the business requirements:
+
+Item-Specific Information:
+Is there a complete list of items available that includes item-specific details like original price, description, and other relevant information? Having this data could help optimize the database design and potentially reduce the storage space needed.
+The Receipts table from the given dataset contains Rejcted and Submitted values for ReceiptRewardStatus coulumn which needed transformation from Submitted to Accepted.
+
+Missing Values:
+During my analysis, I noticed several missing values across various columns. For instance, many items in the dataset lack associated barcodes. This might create issues when defining database relationships. I’d like to clarify the expected relationships between itemNumber, brandCode, and barCode to ensure the database is designed correctly.
+CategoryCode and TopBrand has the most NA values in the Brands table, signUpSource and lastLogin from Users table has the most NA vlaues which when given can help see what way the users are signing up and the lastLogin values can provide with the most active users to keep them engaged with incentives to be an active user on the pltaform.
+Receipts table has important columns like orgnal item price, IDs, userFlaggedPrice and userFlaggedNewItem which would be useful to see what problems the user is facing with new or old products and recitfy them or remove them to provide a better user experience.
+
+Extreme Values:
+I observed some outliers in the dataset while examining the numerical columns. For example, there are transactions where over 800 points were earned, 500+ items were purchased, or $4000+ was spent in a single transaction. Could you confirm if these values are realistic scenarios or potentially errors in the data?
+
+Data Storage Approach:
+Given the growing volume of rows, the current relational database approach might become resource-intensive. Would it make sense to explore alternative storage solutions, such as NoSQL databases, which are better suited for handling JSON-formatted data?
+
+Let me know your thoughts. I’d be happy to set up a meeting if a discussion would help clarify these points more effectively.
+
+Looking forward to your feedback.
+
+Thanks!
+
+Best regards,
+Srihari Katti
